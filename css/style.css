@@ -53,7 +53,6 @@ body {
 }
 
 .img_adj {
-    /* background-size: cover; */
     max-height: 250px;
     width: 100%;
     margin-top: 20px;
@@ -119,26 +118,12 @@ h3 {
     font-weight: bold;
     border-bottom: 2px solid;
     border-bottom-color: #b9b4b4;
-    /* padding: 10px; */
     padding-bottom: 10px;
 }
 
 .col-width {
     padding-left: 0px;
     padding-right: 3px;
-}
-/* .linked-in { */
-    /* width: 25%; */
-    /* padding-right: -1rem; */
-/* } */
-
-#Github {
-    width: 30%;
-    /* padding-right: 5px; */
-}
-
-#overflow {
-    width: 90%;
 }
 
 .img-caption {
@@ -172,29 +157,6 @@ label {
     resize: vertical;
 }
 
-#id_text {
-    font-size: 13px;
-    color: #b9b4b4;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid;
-    border-color: #b9b4b4;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    height: 200px;  
-}
-
-#id_input { 
-    background-color: #4aaaa5;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-}
-
 .foot-chg {
     border-top: 10px solid;
     border-top-color: #4aaaa5;
@@ -215,7 +177,7 @@ label {
     border-radius: 0px;
     box-shadow: 0;
 }
-
+/* Make left column thinner to keep both columns at top */
 @media screen and (max-width: 980px) {
     .container .row-border-c {
         width: 55%;
@@ -232,7 +194,6 @@ label {
     .container .row-border-p {
         width: 60%;
         float: left;
-        /* margin-right: 0px; */
         margin-left: 20px;
     }
 
@@ -251,7 +212,6 @@ label {
     }
 
     .container .connections {
-        /* max-width: 100%; */
         float: right;
         margin-left: 0px;
         margin-right: 20px;
@@ -260,11 +220,11 @@ label {
 
     .container .connections .linked-in {
         max-width: 33%;
-        /* display: inline-block; */
         float: left;
     }
 }
 
+/* Change to 1 column at the top and social media underneath */
 @media screen and (max-width: 768px) {    
     ul .nav .navbar-nav .navbar-right .text-size {
         float: left !important;
@@ -285,7 +245,6 @@ label {
 
     .container .row-border-c {
         width: 100%;
-        /* margin: 0px 30px; */
     }
 
     .container .row-border-p {
@@ -295,7 +254,6 @@ label {
     .container .port {
         display: inline-block;
         width: 50%;
-        column-count: initial;
     }
 
     .container .right {
@@ -309,8 +267,6 @@ label {
     
     .container .connections {
         max-width: 100%;
-        /* box-sizing: border-box; */
-        /* column-span: all; */
         display: block;
         width: 90%;
         margin-right: 50px;
@@ -326,7 +282,7 @@ label {
     }
 }
 
-
+/* Make left side thinner and social media underneath */
 @media screen and (max-width: 640px) {
     nav .navbar-brand {
         display: block;
@@ -369,7 +325,6 @@ label {
         column-span: all;
         display: block;
         width: 100%;
-        /* margin-left: 40px; */
         margin-right: 0px;
         padding-right: 0px;
     }
